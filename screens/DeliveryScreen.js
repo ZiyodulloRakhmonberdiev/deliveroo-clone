@@ -7,7 +7,6 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { useSelector, useDispatch } from "react-redux";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import MapView, { Marker } from "react-native-maps";
-import * as Progress from "react-native-progress";
 
 // ========================Import components====================================== //
 
@@ -56,7 +55,6 @@ const DeliveryScreen = () => {
               className="h-20 w-20"
             />
           </View>
-          <Progress.Bar size={30} color="#00ccbb" indeterminate={true} />
           <Text className="mt-3 text-gray-500">
             Your order at {restaurant?.title} is being prepared
           </Text>

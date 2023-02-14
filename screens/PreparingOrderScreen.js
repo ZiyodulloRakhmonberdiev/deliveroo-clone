@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import * as Animatable from "react-native-animatable";
-import * as Progress from "react-native-progress";
 
 // =============================================================================== //
 
@@ -35,7 +34,6 @@ const PreparingOrderScreen = () => {
       >
         Waiting for Restaurant to accept your order!
       </Animatable.Text>
-      <Progress.Bar indeterminate={true} color="white" size={60}></Progress.Bar>
     </SafeAreaView>
   );
 };
